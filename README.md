@@ -8,7 +8,9 @@ Parameters:
 
 Example usage:
 
-`.\multicopy.ps1 -IPsFile example.txt -Source "C:\data\example.csv" -Destination "C:\data\copied"`
+```PowerShell
+.\multicopy.ps1 -IPsFile "example.txt" -Source "C:\data\example.csv" -Destination "C:\data\copied"
+```
 
 When you run the script, you will be presented with a box to enter the credentials for the remote machines. The remote machines must already be configured to have remote access enabled and must all be accessible using the same credentials.
 
