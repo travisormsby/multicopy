@@ -10,6 +10,6 @@ Example usage:
 
 `.\multicopy.ps1 -IPsFile example.txt -Source "C:\data\example.csv" -Destination "C:\data\copied"`
 
-The remote machines must already be configured to have remote access enabled and must be accessible using the same credentials.
+When you run the script, you will be presented with a box to enter the credentials for the remote machines. The remote machines must already be configured to have remote access enabled and must all be accessible using the same credentials.
 
 **Caution**: This script temporarily modifies the TrustedHosts of your local machine, which is required when accessing remote machines by IP address. You must therefore run this script from an elevated PowerShell process. Authentication protocol is NTLM, not Kerberos. 
