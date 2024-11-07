@@ -25,6 +25,7 @@ foreach ($machine in $machinesArray) {
     }
     $session = New-PSSession -ComputerName $machine -Credential $credential
     Copy-Item -Path $Source -Destination $Destination -ToSession $session
+    Remove-PSSession -Id $session.Id
 }
 
 # Restore original set of trusted hosts
